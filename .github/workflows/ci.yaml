@@ -4,10 +4,10 @@ on:
     branches:
       - develop
 jobs:
-  strategy:
-    matrix:
-      go:['1.14', '1.15']
   check-application:
+    strategy:
+      matrix:
+        go:['1.14', '1.15']
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
