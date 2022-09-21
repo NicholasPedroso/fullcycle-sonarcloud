@@ -17,7 +17,6 @@ jobs:
       - run: go test
       - run: go run math.go
   ci-sonar-cloud:
-    strategy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
