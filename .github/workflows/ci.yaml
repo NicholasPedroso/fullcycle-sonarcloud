@@ -16,7 +16,6 @@ jobs:
           go-version: ${{ matrix.go }}
       - run: go test
       - run: go run math.go
-
 name: ci-sonar-cloud
 on:
   pull_request:
