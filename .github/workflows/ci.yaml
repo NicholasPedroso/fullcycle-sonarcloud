@@ -16,13 +16,7 @@ jobs:
           go-version: ${{ matrix.go }}
       - run: go test
       - run: go run math.go
-name: ci-sonar-cloud
-on:
-  pull_request:
-    branches:
-      - develop
-jobs:
-  run-ci:
+  ci-sonar-cloud:
     strategy:
     runs-on: ubuntu-latest
     steps:
